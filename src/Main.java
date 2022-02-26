@@ -8,10 +8,10 @@ public class Main {
 		
 		Conta cc = new ContaCorrente(natalia);
 		cc.depositar(100);
-		cc.sacar(27);
-				
+					
 		Conta poupanca = new ContaPoupanca(natalia);
-		cc.transferir(13, poupanca);
+		cc.transferir(50, poupanca);
+		poupanca.sacar(27);
 		
 		cc.imprimirExtrato();
 		poupanca.imprimirExtrato();
